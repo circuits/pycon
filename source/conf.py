@@ -285,8 +285,10 @@ extensions += [
     "hieroglyph",
 ]
 
-slide_theme = "slides"
-slide_levels = 3
+slide_theme = "single-level"
+slide_levels = 2
+slide_numbers = True
+slide_footer = "circuits 3.0 - http://circuitsframework.com"
 
 # Place custom static assets in the _static directory and uncomment
 # the following lines to include them

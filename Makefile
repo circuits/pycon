@@ -181,3 +181,5 @@ slides:
 	$(SPHINXBUILD) -b slides $(ALLSPHINXOPTS) $(BUILDDIR)/slides
 	@echo "Build finished. The HTML slides are in $(BUILDDIR)/slides."
 
+serve:
+	circuits.web -b 0.0.0.0:8000 $(BUILDDIR)/slides

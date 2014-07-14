@@ -1,2 +1,2 @@
-hieroglyph
+-e git+https://github.com/nyergler/hieroglyph.git#egg=hieroglyph
 -e hg+https://bitbucket.org/circuits/circuits#egg=circuits
