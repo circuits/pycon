@@ -260,4 +260,17 @@ How you can help
 Questions?
 ==========
 
+.. image:: /_static/images/questions.png
+   :align: center
 
+
+Links
+=====
+
+* circuits Website: http://circuitsframework.com/
+* circuits.web Website: http://circuitsweb.com/
+* PyPi Page: https://pypi.python.org/pypi/circuits
+* Bitbucket Team: https://bitbucket.org/circuits
+* Bitbucket Repository: https://bitbucket.org/circuits/circuits
+* Issue Tracker: https://bitbucket.org/circuits/circuits/issues
+* Mailing List: https://groups.google.com/forum/#!forum/circuits-users
