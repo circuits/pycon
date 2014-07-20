@@ -101,6 +101,16 @@ What does circuits look like? (#3)
 .. figure:: /examples/EchoServer.png
 
 
+Demo!
+=====
+
+.. rst-class:: build
+
+* Hello World!
+* Echo Server
+* Dynamic Runtime
+
+
 Core API (#1)
 =============
 
