@@ -45,6 +45,9 @@ What is circuits?
 .. rst-class:: build
 
 - a Python (*lightweight*) Framework
+
+  - with no external dependencies
+
 - a Component Architecture
 - is Event Driven
 - has Asynchronous I/O
@@ -61,6 +64,36 @@ Why the name "circuits"?
 * Components are registered together (*Breadboard*)
 * Components cooperate and communicate via Event(s) (*Signals*)
 * **Components are composable units of behavior.**
+
+
+circuits' History
+=================
+
+
+.. rst-class:: build
+
+* Inspired by the late Prof. Geoff Dromery
+  and Genetic Software Enginerring
+* First prototypes were writtein Java
+* In development since ~2004 (*10+ years*)
+* Had seen 30+ contributors and counting.
+
+
+circuits' Contributors
+======================
+
+.. rst-class:: build
+
+* James Mills (**Me!**)
+* Alessio Deiana
+* Dariusz Suchojad
+* Michael Lipp
+* Justin Giorgi
+* Tim Miller
+* Edwin Marshall
+* Alex Mayfield
+* Toni Alatalo
+* Holger Krekel
 
 
 What does circuits look like? (#1)
@@ -269,6 +302,7 @@ Links
 
 * circuits Website: http://circuitsframework.com/
 * circuits.web Website: http://circuitsweb.com/
+* circuits Documentation: http://circuits.readthedocs.org/
 * PyPi Page: https://pypi.python.org/pypi/circuits
 * Bitbucket Team: https://bitbucket.org/circuits
 * Bitbucket Repository: https://bitbucket.org/circuits/circuits
