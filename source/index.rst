@@ -30,7 +30,6 @@ What have I done?
 - TerraNova (*Griffith*)
 - CCAV (*Griffith*)
 
-
 **Other Things:**
 
 .. rst-class:: build
@@ -40,9 +39,8 @@ What have I done?
 - Other Smaller Projects
 
 
-What is circuits? (#1)
-======================
-
+What is circuits?
+=================
 
 .. rst-class:: build
 
@@ -50,41 +48,206 @@ What is circuits? (#1)
 - a Component Architecture
 - is Event Driven
 - has Asynchronous I/O
-
-
-What is circuits? (#2)
-======================
-
-
-**circuits also:**
-
-.. rst-class:: build
-
 - has a Web Framework (``circuits.web``)
 - plays nicely with others (*tornado, Twisted, etc*)
 
 
-What does circuits look like?
-=============================
+Why the name "circuits"?
+========================
+
+.. rst-class:: build
+
+* Building Software with circuits is analageous to *Electronic Circuits*
+* Components are registered together (*Breadboard*)
+* Components cooperate and communicate via Event(s) (*Signals*)
+* **Components are composable units of behavior.**
+
+
+What does circuits look like? (#1)
+==================================
 
 .. code-block:: python
     
     from circuits import handler, Component, Debugger
-    
+
     from circuits.net.events import write
     from circuits.net.sockets import TCPServer
-    
-    class EchoServer(TCPServer):
-        
+
+
+    class EchoServer(Component):
+
         def init(self, bind):
             TCPServer(bind).register(self)
-            
+
         @handler("read")
         def on_read(self, sock, data):
-            return data
-    
-    # Start and "run" the system.
-    # Bind to port 0.0.0.0:9000
-    app = EchoServer(9000)
+            self.fire(write(sock, data))
+
+
+    app = EchoServer(("0.0.0.0", 10000))
     Debugger().register(app)
     app.run()
+
+
+What does circuits look like? (#2)
+==================================
+
+.. graphviz:: examples/EchoServer.dot
+
+
+What does circuits look like? (#3)
+==================================
+
+.. figure:: /examples/EchoServer.png
+
+
+Core API (#1)
+=============
+
+**Event Handling**:
+
+.. rst-class:: build
+
+* ``.fire()``
+* ``.wait()``
+* ``.call()``
+
+**Component Registration:**
+
+.. rst-class:: build
+
+* ``.register()``
+* ``.unregister()``
+
+
+Core API (#2)
+=============
+
+**Startup and Shutdown:**
+
+.. rst-class:: build
+
+* ``.start()`` *Thread/Process Mode*
+* ``.stop()``
+* ``.run()``
+
+
+Where we are now (#1)
+=====================
+
+.. rst-class:: build
+
+* Core API
+
+  - ``.fire()``, ``.wait()``, ``.call()``
+  - ``.register()``, ``.unregister()``
+  - ``.start()``, ``.stop()``, ``.run()``
+
+* Core Components
+
+  - Component
+  - Debugger
+  - Bridge
+  - Worker
+  - Timer
+
+
+Where we are now (#2)
+=====================
+
+.. rst-class:: build
+
+* Application
+
+  - Daemon
+
+* I/O
+
+  - File
+  - Serial
+  - INotify
+
+
+Where we are now (#3)
+=====================
+
+.. rst-class:: build
+
+* Networking
+
+  - TCPClient
+  - UDPClient
+  - UNIXClient
+  
+  - TCPServer
+  - UDPServer
+  - UNIXServer
+
+
+Where we are now (#4)
+=====================
+
+.. rst-class:: build
+
+* Protocols
+
+  - WebSockets
+  - Line
+  - HTTP
+  - IRC
+
+* Pollers
+
+  - Select
+  - Poll
+  - EPoll
+  - KQueue
+
+
+Where we are now (#5)
+=====================
+
+.. rst-class:: build
+
+* Web
+
+  - Server
+  - Static
+  - Logger
+  - XMLRPC
+  - JSONRPC
+  - WebSockets
+  - VirtualHosts
+  - WSGI Gateway
+  - WSGI Application
+
+
+Where we want to be
+===================
+
+.. rst-class:: build
+
+* More Protocols
+* Better performance
+* Improved documentation
+* More Application components
+* Improved ``circuits.node`` (*Experimental*)
+
+* **A snazier website!!!**
+
+
+How you can help
+================
+
+.. rst-class:: build
+
+* Join our ``#circuits`` channel on FreeNode IRC!
+* Start using circuits in your project(s)!
+* Contribute Bug fixes and Improvements.
+* Help us port/write new protocols.
+
+
+Questions?
+==========
+
+

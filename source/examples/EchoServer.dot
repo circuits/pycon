@@ -1,0 +1,5 @@
+strict digraph  {
+	EchoServer -> Debugger	 [weight=1.0];
+	EchoServer -> TCPServer	 [weight=1.0];
+	TCPServer -> Select	 [weight=2.0];
+}
