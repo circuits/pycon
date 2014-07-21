@@ -137,14 +137,6 @@ New networkx + matplotlib output:
 .. figure:: /examples/EchoServer.png
 
 
-What does circuits look like? (#4)
-==================================
-
-A more complex system:
-
-.. figure:: /examples/Manager.png
-
-
 Demos!
 ======
 
