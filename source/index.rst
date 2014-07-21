@@ -4,7 +4,7 @@
 
 .. figure:: /_static/images/circuits.png
 
-PyConAU -- 6/Aug/2014
+PyConAU -- 2nd August 2014
 
 
 Who am I?
@@ -26,9 +26,8 @@ What have I done?
 
 .. rst-class:: build
 
+- TerraNova and CCAV (*Griffith*)
 - MyMinesOnlines (*QLD Govt*)
-- TerraNova (*Griffith*)
-- CCAV (*Griffith*)
 
 **Other Things:**
 
@@ -50,7 +49,7 @@ What is circuits?
 
 - a Component Architecture
 - is Event Driven
-- has Asynchronous I/O
+- supports Asynchronous I/O
 - has a Web Framework (``circuits.web``)
 - plays nicely with others (*tornado, Twisted, etc*)
 
@@ -60,7 +59,7 @@ Why the name "circuits"?
 
 .. rst-class:: build
 
-* Building Software with circuits is analageous to *Electronic Circuits*
+* Building Software with circuits is analogous to *Electronic Circuits*
 * Components are registered together (*Breadboard*)
 * Components cooperate and communicate via Event(s) (*Signals*)
 * **Components are composable units of behavior.**
@@ -73,8 +72,8 @@ circuits' History
 .. rst-class:: build
 
 * Inspired by the late Prof. Geoff Dromery
-  and Genetic Software Enginerring
-* First prototypes were writtein Java
+  and Genetic Software Engineering
+* First prototypes were written Java
 * In development since ~2004 (*10+ years*)
 * Had seen 30+ contributors and counting.
 
@@ -125,13 +124,25 @@ What does circuits look like? (#1)
 What does circuits look like? (#2)
 ==================================
 
+Old graphviz output:
+
 .. graphviz:: examples/EchoServer.dot
 
 
 What does circuits look like? (#3)
 ==================================
 
+New networkx + matplotlib output:
+
 .. figure:: /examples/EchoServer.png
+
+
+What does circuits look like? (#4)
+==================================
+
+A more complex system:
+
+.. figure:: /examples/Manager.png
 
 
 Demo!
@@ -208,7 +219,7 @@ Where we are now (#2)
 
   - File
   - Serial
-  - INotify
+  - Notify
 
 
 Where we are now (#3)
@@ -276,7 +287,7 @@ Where we want to be
 * More Application components
 * Improved ``circuits.node`` (*Experimental*)
 
-* **A snazier website!!!**
+* **A snazzier website!!!**
 
 
 How you can help
