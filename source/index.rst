@@ -145,14 +145,29 @@ A more complex system:
 .. figure:: /examples/Manager.png
 
 
-Demo!
-=====
+Demos!
+======
 
-.. rst-class:: build
+.. code-block:: python
 
-* Hello World!
-* Echo Server
-* Dynamic Runtime
+    from circuits import Component, Event
+
+
+    class hello(Event):
+        """hello Event"""
+
+
+    class App(Component):
+
+        def hello(self):
+            print("Hello World!")
+
+        def started(self, component):
+            self.fire(hello())
+            raise SystemExit(0)
+
+
+    App().run()
 
 
 Core API (#1)
