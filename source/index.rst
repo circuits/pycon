@@ -1,6 +1,6 @@
-==========================
-Software Architectures and
-==========================
+=======================
+Component Architectures
+=======================
 
 .. figure:: /_static/images/circuits.png
 
