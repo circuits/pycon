@@ -101,7 +101,7 @@ circuits' History
 
 * Inspired by the late Prof. Geoff Dromery
   and Genetic Software Engineering
-* First prototypes were written Java
+* First prototypes were written in Java
 * In development since ~2004 (*10+ years*)
 * Had seen 30+ contributors and counting.
 
@@ -197,15 +197,15 @@ Core API (#1)
 
 .. rst-class:: build
 
-* ``.fire()``
-* ``.wait()``
-* ``.call()``
+* ``.fire(event, *channels, **kwargs)``
+* ``.wait(event, *channels, **kwargs)``
+* ``.call(event, *channels, **kwargs)``
 
 **Component Registration:**
 
 .. rst-class:: build
 
-* ``.register()``
+* ``.register(parent)``
 * ``.unregister()``
 
 
@@ -216,9 +216,9 @@ Core API (#2)
 
 .. rst-class:: build
 
-* ``.start()`` *Thread/Process Mode*
+* ``.start(process=False, link=None)``
 * ``.stop()``
-* ``.run()``
+* ``.run(socket=None)``
 
 
 Where we are now (#1)
@@ -319,7 +319,7 @@ Where we want to be
 * More Protocols
 * Better performance
 * Improved documentation
-* More Application components
+* More Application Components
 * Improved ``circuits.node`` (*Experimental*)
 
 * **A snazzier website!!!**
