@@ -54,6 +54,34 @@ What is circuits?
 - plays nicely with others (*tornado, Twisted, etc*)
 
 
+Component Architectures (#1)
+============================
+
+* an object that provides a certain type of service
+* typically singletons
+* can declare "extension points" that other components can “plug in” to
+
+*Borrowed from Trace:*
+
+  This allows one component to enhance the functionality of the component
+  it extends, without the extended component even knowing that the extending
+  component exists.
+
+
+Component Architectures (#2)
+============================
+
+.. figure:: /_static/images/xtnpt.png
+
+Similar Frameworks/Projects:
+
+* `Trac <http://trac.edgewall.org/>`_
+* `Zope <http://www.zope.org/>`_
+* `Kamaelia <http://www.kamaelia.org/>`_
+* `pypes <https://pypi.python.org/pypi/pypes>`_
+* *But seriously just use circuits!*
+
+
 Why the name "circuits"?
 ========================
 
