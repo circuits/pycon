@@ -1,6 +1,6 @@
-=============================
- Building Blocks of Software
-=============================
+==========================
+Software Architectures and
+==========================
 
 .. figure:: /_static/images/circuits.png
 
