@@ -103,7 +103,7 @@ circuits' History
   and Genetic Software Engineering
 * First prototypes were written in Java
 * In development since ~2004 (*10+ years*)
-* Had seen 30+ contributors and counting.
+* Has seen 30+ contributors and counting.
 
 
 circuits' Contributors
