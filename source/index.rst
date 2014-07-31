@@ -24,14 +24,10 @@ What have I done?
 
 **Recently:**
 
-.. rst-class:: build
-
 - TerraNova and CCAV (*Griffith*)
 - MyMinesOnlines (*QLD Govt*)
 
 **Other Things:**
-
-.. rst-class:: build
 
 - Various Wiki(s) and CMS(s)
 - Various IRC Bot(s)
