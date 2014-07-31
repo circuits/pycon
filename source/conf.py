@@ -286,7 +286,7 @@ extensions += [
     "hieroglyph",
 ]
 
-slide_theme = "slides2"
+slide_theme = "single-level"
 slide_levels = 2
 slide_numbers = True
 slide_footer = "circuits 3.0 - http://circuitsframework.com"
