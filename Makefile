@@ -181,5 +181,9 @@ slides:
 	$(SPHINXBUILD) -b slides $(ALLSPHINXOPTS) $(BUILDDIR)/slides
 	@echo "Build finished. The HTML slides are in $(BUILDDIR)/slides."
 
-serve:
+publish: html
+	rsync -rlptD $(BUILDDIR)/slides/* bart:/var/www/vhosts/pycon.circuitsframework.com/htdocs/
+	@echo "Build finished."
+
+serve: html
 	circuits.web -b 0.0.0.0:8000 $(BUILDDIR)/slides
