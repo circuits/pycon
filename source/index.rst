@@ -57,7 +57,7 @@ Component Architectures (#1)
 * typically singletons
 * can declare "extension points" that other components can “plug in” to
 
-*Borrowed from Trace:*
+*Borrowed from Trac:*
 
   This allows one component to enhance the functionality of the component
   it extends, without the extended component even knowing that the extending
