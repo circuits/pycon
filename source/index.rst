@@ -45,7 +45,7 @@ What is circuits?
 
 - a Component Architecture
 - is Event Driven
-- supports Asynchronous I/O
+- supports Asynchronous I/O and Coroutines
 - has a Web Framework (``circuits.web``)
 - plays nicely with others (*tornado, Twisted, etc*)
 
